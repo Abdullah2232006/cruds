@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg_black : rgb(68, 68, 68) ;
+    --input_black : rgb(28, 27, 27);
+    --white : #fff ;
+    --black : #000;
+    --input_hover : #111 ;
+    --button_bg : #310044 ;
+    --button_hover : #45025f ;
+}
+
+.width100 {
+    width: 100%;
+}
+
+body {
+    background-color:var(--bg_black) ;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+/* head styling */
+
+.crud {
+    width: 80%;
+    margin:  auto;
+}
+
+.crud .head {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.crud .head h1 {
+    margin: 10px auto;
+    
+}
+
+/* input styling */
+
+.input {
+    width: 100%;
+}
+
+.input input , .output #searchBlock input{
+    height: 3rem;
+    margin: .5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: var(--input_black);
+    color: var(--white);
+    border: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.price input {
+    width: 20%;
+}
+
+.input input:focus {
+    background-color: var(--black);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    outline: none;
+}
+
+.input input:hover {
+    background-color: var(--input_hover);
+}
+
+#total {
+    background-color: #a00d02;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+#total::before {
+    content: "total:";
+}
+
+button {
+    height: 3rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--button_bg);
+    color: #fff;
+    font-size: 1rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .1s;
+}
+
+button:hover {
+    background-color: var(--button_hover);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+/* OUTPUT STYLING  */
+
+#searchBlock #searchBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchBlock #searchBtn button {
+    width: 45%;
+}
+
+#searchInput {
+    height: 3rem;
+    margin: .5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: var(--input_black);
+    color: var(--white);
+    border: none;
+    padding: 20px;
+    width: 100%;
+}
+
+#searchInput input:hover {
+    background-color: var(--input_hover);
+}
+
+#searchInput:focus {
+    background-color: var(--black);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    outline: none;
+}
+
+
+/* delete all btn styling */
+
+#deleteAll {
+    margin: 1rem;
+    display: block;
+}
+
+/* table styling  */
+
+table {
+    padding-top: 2rem;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+table thead tr td{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+table tbody tr td {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 9%;
+    align-items: center;
+}
+
+table button {
+    width: 100px;
+}
